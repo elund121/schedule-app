@@ -1,0 +1,13 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.list-hover:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.bgc-red {
+    background-color: #FFCDD2;
+}
+.bgc-red:hover {
+    background-color: #FFCDD2;
+}

@@ -1,0 +1,8 @@
+<h2 class="mat-h2">My Schedule</h2>
+
+<mat-list>
+    <h3 mat-subheader>Time Slots</h3>
+    <mat-list-item *ngFor="let hour of hours" class="list-hover" [ngClass]="{'bgc-red' : hour.available == false}" (click)="openDialog(hour)">
+        <h4 mat-line>{{hour.time}}</h4>
+    </mat-list-item>
+</mat-list>

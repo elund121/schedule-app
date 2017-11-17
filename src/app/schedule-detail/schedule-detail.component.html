@@ -1,0 +1,15 @@
+<h2 mat-dialog-title>Edit Details for {{appointment.time}}</h2>
+
+<mat-dialog-content>
+    <mat-form-field>
+        <input matInput type="text" placeholder="Name" [(ngModel)]="appointment.name">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput type="text" placeholder="Phone Number" [(ngModel)]="appointment.number">
+    </mat-form-field>
+
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button color="primary" [disabled]="(!appointment.name || !appointment.number) && appointment.available" [mat-dialog-close]="true">Save</button>
+</mat-dialog-actions>
